@@ -5,12 +5,12 @@ source ${SHOPBASH_HOME}/utils/colors
 # bump version frist but dont push
 shopbash ms bump --no-push --no-tag
 NEXT_VERSION="$(node -p "require('./package.json').version")"
+# tag version
+MESSAGE="feat: release version ${NEXT_VERSION}"
+# git commit --amend -m "$MESSAGE"
+git tag -a "v${NEXT_VERSION}" -m "$MESSAGE"
 # release packages
 npm run release
-# tag version
-git add . -A
-MESSAGE="feat: release version ${NEXT_VERSION}"
-git commit --amend -m "$MESSAGE"
 # prepare to publish dependency packages
 cGreen "Publishing packages to Nexus"
 npm run clean
@@ -20,6 +20,5 @@ npm run publish
 # clean after publish
 npm run clean:build-artifacts
 cGreen "Packages released to Nexus"
-git tag -a "v${NEXT_VERSION}" -m "$MESSAGE"
 #
 cPurple "Now you can run shopbash ms release [country]"
