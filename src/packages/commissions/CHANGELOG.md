@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/shopback/rate-and-tier-service/src/packages/global/compare/@test/commissions@0.1.0...@test/commissions@0.2.0) (2019-03-05)
+
+
+### Bug Fixes
+
+* update build script ([3dd9201](https://github.com/shopback/rate-and-tier-service/src/packages/global/commit/3dd9201))
+
+
+
+## 0.0.5 (2019-03-05)
+
+
+### Bug Fixes
+
+* **commisisons:** update logic ([2c2d7c6](https://github.com/shopback/rate-and-tier-service/src/packages/global/commit/2c2d7c6))
+
+
+### Features
+
+* release version 0.0.5 ([979594b](https://github.com/shopback/rate-and-tier-service/src/packages/global/commit/979594b))
+
+
+
+
+
 ## [0.1.1](https://github.com/shopback/rate-and-tier-service/src/packages/global/compare/@test/commissions@0.1.0...@test/commissions@0.1.1) (2019-03-05)
 
 
