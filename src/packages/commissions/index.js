@@ -1,4 +1,4 @@
-console.log('update commission 3');
+console.log('update commission 4');
 exports = {
   file: 'commissions'
 }
