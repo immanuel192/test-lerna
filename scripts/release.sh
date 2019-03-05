@@ -10,7 +10,7 @@ npm run release
 # tag version
 git add . -A
 MESSAGE="feat: release version ${NEXT_VERSION}"
-git commit -m "$MESSAGE"
+git commit --amend -m "$MESSAGE"
 git tag -a "v${NEXT_VERSION}" -m "$MESSAGE"
 # prepare to publish dependency packages
 cGreen "Publishing packages to Nexus"
