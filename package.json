@@ -7,9 +7,9 @@
   },
   "scripts": {
     "release": "lerna version --include-merged-tags --no-commit-hooks --amend --no-push --conventional-commits --exact --no-ci --yes",
+    "publish": "lerna publish from-package --progress --no-ci --yes",
     "test": "lerna run test",
     "bootstrap": "lerna bootstrap --ignore-prepublish --force-local --hoist --no-ci",
-    "publish": "lerna publish from-package --progress --no-ci --yes",
     "clean:build-artifacts:package.json": "find . -type f -not -path '*/node_modules/*' -name 'package.json' -exec git checkout -- {} \\;",
     "clean:build-artifacts": "find . -not -path '*/node_modules/*' -type f \\(  -name 'package-lock.json' -o -name '*.js' -o -name 'current.zip' \\)  -delete && find . -not \\(  -path '*/@types*' -o -path '*/node_modules/*' \\) -type f  -name '*.d.ts'  -delete && find . -not -path '*/node_modules/*' -type d -name 'dist' -exec rm -r '{}' \\; || : && npm run clean:build-artifacts:package.json",
     "clean": "find . -type d -name 'node_modules' -exec rm -r '{}' \\;  || : && npm run clean:build-artifacts"
