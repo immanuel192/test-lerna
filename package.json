@@ -7,7 +7,7 @@
   },
   "scripts": {
     "release": "lerna version --include-merged-tags --no-commit-hooks --amend --no-push --conventional-commits --exact --no-ci --yes",
-    "publish": "lerna publish from-package --progress --no-ci --yes",
+    "publish": "lerna publish from-package --progress --no-git-reset --no-ci --yes",
     "test": "lerna run test",
     "bootstrap": "lerna bootstrap --ignore-prepublish --force-local --hoist --no-ci",
     "clean:build-artifacts:package.json": "find . -type f -not -path '*/node_modules/*' -name 'package.json' -exec git checkout -- {} \\;",
