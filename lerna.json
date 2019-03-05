@@ -1,12 +1,6 @@
 {
   "npmClient": "npm",
   "command": {
-    "publish": {
-      "message": "chore: publish %s"
-    },
-    "version": {
-      "message": "chore: publish %s"
-    },
     "bootstrap": {
       "npmClientArgs": [
         "--no-package-lock"
