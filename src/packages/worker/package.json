@@ -1,5 +1,5 @@
 {
-  "name": "test-service",
+  "name": "test-worker",
   "private": true,
   "main": "index",
   "engines": {
@@ -9,15 +9,15 @@
     "registry": "http://nexus.infra.shopback.com:8081/repository/npm-internal/"
   },
   "version": "0.0.1",
-  "description": "rate-and-tier-service main service",
+  "description": "rate-and-tier-service worker",
   "author": "Trung Dang",
   "repository": {
     "type": "git",
     "url": "https://github.com/shopback/rate-and-tier-service/src/packages/global"
   },
   "dependencies": {
-    "@rats/commissions": "0.0.1",
-    "@rats/cashbacks": "0.0.1",
+    "@test/commissions": "0.0.1",
+    "@test/cashbacks": "0.0.1",
     "lodash": "4.17.11"
   },
   "devDependencies": {},
