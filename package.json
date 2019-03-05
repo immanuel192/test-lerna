@@ -11,7 +11,7 @@
     "test": "lerna run test",
     "bootstrap": "lerna bootstrap --ignore-prepublish --force-local --hoist --no-ci",
     "clean:build-artifacts:package.json": "find . -type f -not -path '*/node_modules/*' -name 'package.json' -exec git checkout -- {} \\;",
-    "clean:build-artifacts": "find . -not -path '*/node_modules/*' -type f \\(  -name 'package-lock.json' -o -name '*.js' -o -name 'current.zip' \\)  -delete && find . -not \\(  -path '*/@types*' -o -path '*/node_modules/*' \\) -type f  -name '*.d.ts'  -delete && find . -not -path '*/node_modules/*' -type d -name 'dist' -exec rm -r '{}' \\; || : && npm run clean:build-artifacts:package.json",
+    "clean:build-artifacts": "echo cleaning ...",
     "clean": "find . -type d -name 'node_modules' -exec rm -r '{}' \\;  || : && npm run clean:build-artifacts"
   },
   "keywords": [],
