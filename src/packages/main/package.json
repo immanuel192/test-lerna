@@ -8,7 +8,7 @@
   "publishConfig": {
     "registry": "http://nexus.infra.shopback.com:8081/repository/npm-internal/"
   },
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "rate-and-tier-service main service",
   "author": "Trung Dang",
   "repository": {
@@ -16,7 +16,7 @@
     "url": "https://github.com/shopback/rate-and-tier-service/src/packages/global"
   },
   "dependencies": {
-    "@test/cashbacks": "0.1.0",
+    "@test/cashbacks": "0.1.1",
     "@test/commissions": "0.1.0",
     "lodash": "4.17.11"
   },
