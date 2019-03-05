@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.12](https://github.com/shopback/rate-and-tier-service/src/packages/global/compare/test-service@0.0.11...test-service@0.0.12) (2019-03-05)
+
+
+### Bug Fixes
+
+* update build script ([fce6961](https://github.com/shopback/rate-and-tier-service/src/packages/global/commit/fce6961))
+
+
+
+
+
 ## [0.0.11](https://github.com/shopback/rate-and-tier-service/src/packages/global/compare/test-service@0.0.10...test-service@0.0.11) (2019-03-05)
 
 **Note:** Version bump only for package test-service
