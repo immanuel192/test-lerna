@@ -8,11 +8,6 @@ npm run release
 NEXT_VERSION="$(node -p "require('./lerna.json').version")"
 if [ "$CURRENT_VERSION" != "$NEXT_VERSION" ]; then
   cGreen "Publishing packages to Nexus"
-  sed -i "" "s/\"version\": \"[0-9]*\.[0-9]*\.[0-9]*\"/\"version\": \"${NEXT_VERSION}\"/g" package.json
-  git add . -A
-  MESSAGE="feat(rate-and-tier-service): release version ${NEXT_VERSION}"
-  git commit -m "$MESSAGE"
-  git tag -a "v${NEXT_VERSION}" -m "$MESSAGE"
   npm run clean
   npm install
   npm run bootstrap
