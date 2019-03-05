@@ -1,4 +1,4 @@
-console.log('test change 1');
+console.log('update commission');
 exports = {
   file: 'commissions'
 }
