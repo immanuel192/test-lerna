@@ -6,7 +6,7 @@
     "lerna": "3.13.0"
   },
   "scripts": {
-    "release": "lerna version patch --no-commit-hooks --no-git-tag-version --conventional-commits --exact --yes --no-ci",
+    "release": "lerna version patch --no-commit-hooks --conventional-commits --exact --yes --no-ci",
     "test": "lerna run test",
     "bootstrap": "lerna bootstrap --ignore-prepublish --force-local --hoist --no-ci",
     "publish": "lerna publish from-git --progress --no-git-reset --yes",
