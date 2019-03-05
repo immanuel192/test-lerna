@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.10](https://github.com/shopback/rate-and-tier-service/src/packages/global/compare/test-worker@0.0.9...test-worker@0.0.10) (2019-03-05)
+
+
+### Performance Improvements
+
+* **worker:** improve worker performance ([424b13d](https://github.com/shopback/rate-and-tier-service/src/packages/global/commit/424b13d))
+
+
+
+
+
 ## [0.0.9](https://github.com/shopback/rate-and-tier-service/src/packages/global/compare/test-worker@0.0.8...test-worker@0.0.9) (2019-03-05)
 
 **Note:** Version bump only for package test-worker
