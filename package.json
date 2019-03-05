@@ -1,6 +1,6 @@
 {
   "name": "test",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "dependencies": {},
   "devDependencies": {
     "lerna": "3.13.0"
