@@ -1,0 +1,45 @@
+{
+  "name": "@test/commissions",
+  "main": "index",
+  "engines": {
+    "node": ">=10.12.0"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.infra.shopback.com:8081/repository/npm-internal/"
+  },
+  "version": "0.0.1",
+  "description": "rate-and-tier-service commissions module",
+  "author": "Trung Dang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shopback/rate-and-tier-service/src/packages/global"
+  },
+  "dependencies": {
+    "lodash": "4.17.11"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {
+    "lodash": "4.17.11"
+  },
+  "scripts": {
+    "prepublishOnly": "echo 'build package commissions'",
+    "clean": "find . -type f -name '*.js' -or -name '*.d.ts' -or -name 'package-lock.json' -not -name 'shopback-common-nodes.d.ts' -delete && rm -Rf node_modules",
+    "cover": "npm run lint && NODE_ENV=test jest --coverage",
+    "test": "npm run lint && NODE_ENV=test jest",
+    "test:watch": "NODE_ENV=test jest --watch"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "./",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "./coverage",
+    "testEnvironment": "node"
+  }
+}

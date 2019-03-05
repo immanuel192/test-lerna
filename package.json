@@ -1,0 +1,56 @@
+{
+  "name": "test",
+  "version": "0.0.56",
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "3.13.0"
+  },
+  "scripts": {
+    "release": "lerna version patch --no-commit-hooks --no-git-tag-version --conventional-commits --exact --yes --no-ci",
+    "test": "lerna run test",
+    "bootstrap": "lerna bootstrap --ignore-prepublish --force-local --hoist --no-ci",
+    "publish": "lerna publish from-package --progress --no-git-reset --yes",
+    "clean:build-artifacts:package.json": "find . -type f -not -path '*/node_modules/*' -name 'package.json' -exec git checkout -- {} \\;",
+    "clean:build-artifacts": "find . -not -path '*/node_modules/*' -type f \\(  -name 'package-lock.json' -o -name '*.js' -o -name 'current.zip' \\)  -delete && find . -not \\(  -path '*/@types*' -o -path '*/node_modules/*' \\) -type f  -name '*.d.ts'  -delete && find . -not -path '*/node_modules/*' -type d -name 'dist' -exec rm -r '{}' \\; || : && npm run clean:build-artifacts:package.json",
+    "clean": "find . -type d -name 'node_modules' -exec rm -r '{}' \\;  || : && npm run clean:build-artifacts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shopback/rate-and-tier-service/issues"
+  },
+  "homepage": "https://github.com/shopback/rate-and-tier-service#readme",
+  "jest": {
+    "roots": [
+      "<rootDir>/src/packages"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": ".spec.ts$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/migrations/",
+      "/e2e/"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/migrations/",
+      "/e2e/"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "<rootDir>/src/packages/**/*.ts",
+      "!<rootDir>/src/packages/**/*.d.ts",
+      "!**/node_modules/**",
+      "!**/migrations/**"
+    ],
+    "testEnvironment": "node"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
