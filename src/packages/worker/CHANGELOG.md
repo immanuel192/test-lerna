@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/shopback/rate-and-tier-service/src/packages/global/compare/test-worker@0.3.0...test-worker@0.3.1) (2019-03-05)
+
+**Note:** Version bump only for package test-worker
+
+
+
+
+
 # [0.3.0](https://github.com/shopback/rate-and-tier-service/src/packages/global/compare/test-worker@0.0.12...test-worker@0.3.0) (2019-03-05)
 
 
