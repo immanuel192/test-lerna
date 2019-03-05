@@ -7,7 +7,7 @@
   "publishConfig": {
     "registry": "http://nexus.infra.shopback.com:8081/repository/npm-internal/"
   },
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "rate-and-tier-service commissions module",
   "author": "Trung Dang",
   "repository": {
