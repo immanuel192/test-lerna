@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/shopback/rate-and-tier-service/src/packages/global/compare/@test/cashbacks@0.1.1...@test/cashbacks@0.1.2) (2019-03-05)
+
+
+### Bug Fixes
+
+* **cashbacks:** update ([707e4f1](https://github.com/shopback/rate-and-tier-service/src/packages/global/commit/707e4f1))
+
+
+
+
+
 ## [0.1.1](https://github.com/shopback/rate-and-tier-service/src/packages/global/compare/@test/cashbacks@0.1.0...@test/cashbacks@0.1.1) (2019-03-05)
 
 
